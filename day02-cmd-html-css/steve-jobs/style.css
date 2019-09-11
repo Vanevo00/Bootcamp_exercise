@@ -1,26 +1,37 @@
-ol {
-  counter-reset: item;
-  }
+html {
+  font-family: sans-serif;
+  color: #222222;
+}
 
-  ol > li {
-      counter-increment: item;
-  }
+p {
+  width: 80%;
+  font-size: 14px;
+  line-height: 1.6;
+}
 
-  ol ol > li {
-      display: block;
-  }
+img {
+  max-height: 50vh;
+  float: right;
+  margin-right: 2vw;
+}
 
-  ol ol > li:before {
-      content: counters(item, ".") ". ";
-      margin-left: -20px;
-  }
+.bold {
+  font-weight: bold;
+}
 
-  h1 {
-    border-bottom: 1px solid #D6E2E8;
-    width: 100%;
-    display: block;
-  }
+a, ol {
+  color: blue;
+  text-decoration: none;
+}
 
-  img {
-    max-height: 40vh;
+a:hover, ol li:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+h1, h2{
+  border-bottom: 0.25px solid rgb(170, 166, 167);
+  width: 100%;
+  display: block;
+  font-family: "Linux Libertine", Georgia, Times, serif;
   }

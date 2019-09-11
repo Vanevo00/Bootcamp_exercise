@@ -1,0 +1,44 @@
+#georgia .example p { font-family: Georgia, serif }
+#palatino-linotype .example p { font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif }
+#times-new-roman .example p { font-family: "Times New Roman", Times, serif }
+#arial .example p { font-family: Arial, Helvetica, sans-serif }
+#arial-black .example p { font-family: "Arial Black", Gadget, sans-serif }
+#comic-sans-ms .example p { font-family: "Comic Sans MS", cursive, sans-serif }
+#impact .example p { font-family: Impact, Charcoal, sans-serif }
+#lucida-sans-unicode .example p { font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif }
+#tahoma .example p { font-family: Tahoma, Geneva, sans-serif }
+#trebuchet-ms .example p { font-family: "Trebuchet MS", Helvetica, sans-serif }
+#verdana .example p { font-family: Verdana, Geneva, sans-serif }
+#courier-new .example p { font-family: "Courier New", Courier, monospace }
+#lucida-console .example p { font-family: "Lucida Console", Monaco, monospace }
+
+header {
+  background-color: #0abbbb;
+}
+
+h1 {
+  color: white;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+}
+
+main .font {
+  border-bottom: 1px solid #c7c7c7;
+}
+
+span.name {
+  font-size: 1.5em;
+}
+
+.code span {
+  font-size: 0.75em;
+  font-weight: bold;
+}
+
+.font code {
+  background-color: #e7e7e7;
+}
+
