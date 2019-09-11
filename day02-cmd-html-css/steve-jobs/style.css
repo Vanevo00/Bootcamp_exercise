@@ -21,14 +21,6 @@ ol {
     display: block;
   }
 
-  .Jobs {
-    display: inline-block;
-    margin-right: 2vw;
-    max-height: 30vh;
-    float: right;
-  }
-
-  .beginning-text p {
-    display: inline-block;
-    width: 80%;
+  img {
+    max-height: 40vh;
   }
