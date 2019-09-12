@@ -1,0 +1,97 @@
+* {
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "From the Woods";
+  src: url(graphics/FromtheWoods-Regular.woff2) format('woff2');
+}
+
+body {
+  color: #FFFFFF;
+  font-family: 'Open Sans', sans-serif;
+  margin: 0;
+}
+
+main {
+  background-image: url(graphics/bg.jpg);
+  background-size: cover;
+}
+
+h1, h2, h3 {
+  margin: 0;
+}
+
+h1 {
+  font-family: "From the Woods";
+  font-size: 8rem;
+  text-align: center;
+  padding-top: 5vh;
+}
+
+.central-text, .lower-text {
+  text-align: center;
+  width: 60%;
+  margin: auto;
+  
+}
+
+.central-text p {
+  font-size: 1.4rem;
+}
+
+p {
+  font-size: 1.2rem;
+}
+
+.circle-container {
+  margin: auto;
+  padding: 5rem 0;
+  width: 60%;
+}
+
+.green-circle {
+  background-color: #4F6A13;
+  border-radius: 50%;
+  width: 350px;
+  height: 350px;
+  text-align: center;
+}
+
+.green-circle img {
+  margin-top: 10%;
+}
+
+.green-circle p {
+  width: 80%;
+  margin: 15px auto 0 auto;
+}
+
+.circle2 {
+  margin-left: 25rem;
+  margin-top: -10rem;
+}
+
+.circle3 {
+  margin-top: -6rem;
+}
+
+footer {
+  background-color: #2D4823;
+  padding: 6rem 0;
+  text-align: center;
+}
+
+h2 {
+  font-size: 2rem;
+  font-weight: 500;
+}
+
+.lower-text p {
+  font-size: 1.5rem;
+  font-weight: 300;
+}
+
+a {
+  color: #D3D3D3;
+}

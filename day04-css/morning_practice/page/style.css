@@ -1,0 +1,50 @@
+html {
+  color: #555555;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+article {
+  width: 50%;
+  margin: 0 auto;
+}
+
+section {
+  padding: 0.5rem 2rem;
+}
+
+h1 {
+  font-size: 36px;
+  text-align: center;
+}
+
+h2 {
+  font-size: 28px;
+}
+
+p {
+  text-align: justify;
+  line-height: 1.5;
+}
+
+a {
+  color: #6290C3;
+}
+
+strong {
+  color: black;
+}
+
+h1, h2 {
+  color: #23226C;
+}
+
+.intro, .conclusion {
+  background-color: #D2D6EF;
+}
+
+em {
+  background-color: #D2D6EF;
+  font-style: normal;
+}
+
+
