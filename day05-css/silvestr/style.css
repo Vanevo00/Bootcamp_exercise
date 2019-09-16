@@ -1,0 +1,48 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: 'Creepster', cursive;
+  background-image: url(knife-2879253_1920.jpg);
+  background-size: cover;
+
+}
+
+img {
+  max-height: 60vh;
+  margin: 10vh 0 0 11rem;
+}
+
+.description {
+  width: 40%;
+  float: right;
+  margin: 15vh 15rem 0 0;
+  color: rgb(124, 4, 4);
+}
+
+.description h1 {
+  font-size: 3rem;
+}
+
+.description p {
+  font-size: 2rem;
+}
+
+button {
+  width: 8rem;
+  height: 3rem;
+  background-color: rgb(124, 4, 4);
+  border: rgb(117, 50, 50);
+  color: white;
+  font-family: 'Creepster', cursive;
+  font-size: 2rem;
+  border-radius: 1rem;
+  transition: 0.5s;
+}
+
+button:hover {
+  background-color: white;
+  border: white;
+  color: rgb(124, 4, 4);
+}

@@ -1,0 +1,47 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+}
+
+nav {
+  text-align: center;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+nav a {
+  text-decoration: none;
+  color: #000000;
+  padding: 1rem;
+}
+
+.introduction-pic{
+  width: 100vw;
+}
+
+.container {
+  width: 60%;
+  margin: auto;
+}
+
+h1 {
+  color: #FFFFFF;
+  margin-top: -22rem;
+  border: solid 1rem white;
+}
+
+.yellow {
+  color: #FFE964;
+}
+
+.red {
+  color: #FF523D;
+}
+
+.blue {
+  color: #223C88;
+}
