@@ -1,0 +1,33 @@
+.background-plot {
+  background-color: $grey;
+  display: flex;
+  justify-content: center;
+  padding: 2rem 0;
+}
+
+.plot {
+  display: flex;
+  width: 80%;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  }
+
+  img {
+    max-width: 25%;
+  }
+
+  .text-plot {
+    max-width: 75%;
+    margin-top: 2rem;
+    padding-left: 1rem;
+
+    h4 {
+      font-size: 1.5rem;
+      font-weight: 200;
+    }
+
+    p {
+      font-size: 1.2rem;
+    }
+  }
+

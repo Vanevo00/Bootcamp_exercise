@@ -1,0 +1,17 @@
+$orange: rgb(187, 141, 57);
+
+nav {
+
+  a {
+    color: $orange;
+
+    &:hover {
+      color: black;
+    }
+  }
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}

@@ -1,0 +1,56 @@
+.ratings {
+  padding-top: 2rem;
+  background-color: $grey;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.ratings-graph {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  padding: 2rem 8rem;
+}
+
+
+
+.imdb {
+  .graph {
+    background-color: $darkgrey;
+    height: 13rem;
+    width: 12rem;
+  }
+
+  p {
+    text-align: center;
+  }
+}
+
+.rottentomatoes {
+  .graph {
+    background-color: $darkgrey;
+    height: 15rem;
+    width: 12rem;
+  }
+  
+  p {
+    text-align: center;
+  }
+}
+
+.metacritic {
+  .graph {
+    background-color: $darkgrey;
+    height: 14rem;
+    width: 12rem;
+  }
+
+  p {
+    text-align: center;
+  }
+}
+
+.imdb, .rottentomatoes, .metacritic {
+  margin-left: 2.5rem;
+}

@@ -1,0 +1,36 @@
+.characters {
+  background-image: url(../img/rey-standing.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 500px;
+  display: flex;
+  flex-flow: column;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem 0;
+
+  .character-images {
+    max-width: 100%;
+
+    img {
+      border-radius: 50%;
+    }
+
+    .XS {
+      max-width: 80px;
+    }
+
+    .S {
+      max-width: 100px;
+    }
+
+    .M {
+      max-width: 120px;
+    }
+
+    .L {
+      max-width: 140px;
+    }
+  }
+}

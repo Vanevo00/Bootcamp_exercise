@@ -1,0 +1,23 @@
+@import "colors.scss";
+
+.introduction-picture {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 100%;
+  background-image: url("../img/welcome.jpg");
+  height: 350px;
+  background-position: center;
+  color: white;
+  text-align: center;
+
+  h1 {
+    font-size: 4rem;
+  }
+
+  h2 {
+    font-size: 2rem;
+    color: $grey;
+  }
+}
