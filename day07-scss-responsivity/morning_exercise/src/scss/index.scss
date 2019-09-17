@@ -1,0 +1,55 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  color: white;
+  font-family: 'Roboto', sans-serif;
+}
+
+body {
+  margin: 0;
+}
+
+h1, h2 {
+  margin: 0;
+}
+
+body {
+  background-image: url("/img/got-bg.jpg");
+  display: flex;
+  justify-content: space-between;
+  height: 100vh;
+
+  h1 {
+    font-size: 3rem;
+    font-weight: bold;
+  }
+
+  h2 {
+    font-size: 2rem;
+  }
+
+  .main-headline {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    margin: 0 0 4rem 4rem;
+    z-index: 1;
+  }
+
+  .name-date {
+    margin: 1rem 4rem 0 0;
+    text-align: right;
+    z-index: 1;
+  }
+}
+
+.darken {
+  position: absolute;
+  background-color: black;
+  height: 100vh;
+  width: 100%;
+  margin: 0;
+  opacity: .7;
+}
