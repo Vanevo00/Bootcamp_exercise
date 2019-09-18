@@ -1,0 +1,49 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: 'Roboto', sans-serif;
+}
+
+body {
+  margin: 0;
+  background-image: url(/img/coffee-photo.jpg);
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.brown-block {
+  height: 100vh;
+  background-color: rgba(61, 34, 16, 0.7);
+  width: 30%;
+  text-align: center;
+  color: white;
+  padding: 2rem;
+
+  h1 {
+    font-size: 4rem;
+    margin-top: 3rem;
+    font-weight: bold;
+  }
+
+  p {
+    width: 80%;
+    margin: 3rem auto;
+    font-size: 1.2rem;
+    line-height: 150%;
+  }
+
+  button {
+    width: 70%;
+    height: 120px;
+    font-size: 2rem;
+    border-radius: 15px;
+    background-color: red;
+    color: white;
+    border: solid white 1px;
+  }
+}
+
