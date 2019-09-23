@@ -1,0 +1,14 @@
+$default-color: #ff0066;
+
+nav {
+  border: 1px solid $default-color;
+
+  a {
+    color: $default-color;
+
+    &:hover {
+      background-color: $default-color;
+      color: #ffffff;
+    }
+  } 
+}
