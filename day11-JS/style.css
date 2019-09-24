@@ -1,0 +1,39 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  background-color: white;
+  width: 90vmin;
+  height: 90vmin;
+  display: flex;
+  flex-direction: column;
+}
+
+.row {
+  display: flex;
+  height: 12.5%;
+  margin: .4%;
+}
+
+.dark-grey-box {
+  margin: .4%;
+  background-color: rgb(88, 85, 85);
+  width: 12.5%;
+  height: 100%;
+}
+
+.light-grey-box {
+  margin: .4%;
+  background-color: rgb(165, 159, 159);
+  width: 12.5%;
+  height: 100%;
+}
