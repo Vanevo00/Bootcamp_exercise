@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Two Dice Roll</title>
+  <script>
+  
+    let one = 0;
+    let two = 0;
+    let three = 0;
+    let four = 0;
+    let five = 0;
+    let six = 0;
+    let seven = 0;
+    let eight = 0;
+    let nine = 0;
+    let ten = 0;
+    let eleven = 0;
+    let twelve = 0;
+    
+  function dice_roll() {
+    return Math.floor(Math.random() * 6) + 1;
+  }
+
+  function two_dice_roll() {
+    return dice_roll() + dice_roll();
+  }
+
+  for (let i = 0; i < 100000000; i++) {
+    switch (two_dice_roll()) {
+      case 1: one += 1; break;
+      case 2: two += 1; break;
+      case 3: three += 1; break;
+      case 4: four += 1; break;
+      case 5: five += 1; break;
+      case 6: six += 1; break;
+      case 7: seven += 1; break;
+      case 8: eight += 1; break;
+      case 9: nine += 1; break;
+      case 10: ten += 1; break;
+      case 11: eleven += 1; break;
+      case 12: twelve += 1; break;
+    }
+  }
+
+  let sum = one + two + three + four + five + six + seven + eight + nine + ten + eleven + twelve;
+
+  function percentage(num, sum) {
+    return ((num / sum) * 100);
+  }
+
+  document.write(`one: ${percentage(one, sum).toFixed(3)}%`);document.write("<br>")
+  document.write(`two: ${percentage(two, sum).toFixed(3)}%`);document.write("<br>")
+  document.write(`three: ${percentage(three, sum).toFixed(3)}%`);document.write("<br>")
+  document.write(`four: ${percentage(four, sum).toFixed(3)}%`);document.write("<br>")
+  document.write(`five: ${percentage(five, sum).toFixed(3)}%`);document.write("<br>")
+  document.write(`six: ${percentage(six, sum).toFixed(3)}%`);document.write("<br>")
+  document.write(`seven: ${percentage(seven, sum).toFixed(3)}%`);document.write("<br>")
+  document.write(`eight: ${percentage(eight, sum).toFixed(3)}%`);document.write("<br>")
+  document.write(`nine: ${percentage(nine, sum).toFixed(3)}%`);document.write("<br>")
+  document.write(`ten: ${percentage(ten, sum).toFixed(3)}%`);document.write("<br>")
+  document.write(`eleven: ${percentage(eleven, sum).toFixed(3)}%`);document.write("<br>")
+  document.write(`twelve: ${percentage(twelve, sum).toFixed(3)}%`);document.write("<br>")
+
+  document.write(`one: ${one}, two: ${two}, three: ${three}, four: ${four}, five: ${five}, six: ${six}, seven: ${seven}, eight: ${eight}, nine: ${nine}, ten: ${ten}, eleven: ${eleven}, twelve: ${twelve}`);
+   
+    
+  
+  
+  </script>
+</head>
+<body>
+  
+</body>
+</html>
