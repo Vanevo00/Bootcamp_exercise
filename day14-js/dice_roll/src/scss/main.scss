@@ -1,0 +1,41 @@
+* {
+    box-sizing: border-box;
+}
+ 
+html {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 0.875em;
+}
+
+body {
+    margin: 0;
+    padding: 0 2em;
+}
+
+.none {
+    display: none;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+
+    .dice-container {
+        width: 10%;
+        margin: 2rem;
+
+
+        img {
+            width: 100%;
+        }
+    }
+}
+
+button {
+    display: block;
+    margin: 0 auto;
+    padding: 2rem 3rem;
+    font-size: 2rem;
+    background: black;
+    color: white;
+}
