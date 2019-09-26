@@ -1,0 +1,15 @@
+$red: #ff0000;
+ 
+html {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 0.875em;
+}
+
+body {
+    margin: 0;
+    padding: 0 2em;
+}
+
+h1 {
+    color: $red;
+}
