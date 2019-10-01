@@ -1,0 +1,25 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 0.875em;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.product-list {
+    display: flex;
+    flex-wrap: wrap;
+
+    .container-product {
+        margin: 1rem;
+        padding: 1rem;
+        background-color: lightblue;
+
+    }
+}
