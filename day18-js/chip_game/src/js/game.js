@@ -63,6 +63,11 @@ class Game {
     this.chip.innerHTML = (`
     <p>${randomChipValue}</p>
     `);
+    setInterval(() => {
+      this.chip.style.left = `${Math.floor(Math.random() * 540)}px`;
+      this.chip.style.top = `${Math.floor(Math.random() * 370) + 175}px`;
+    }, 1000);
+
     this.board.appendChild(this.chip);
 
     this.chip.addEventListener('click', (e) => {
