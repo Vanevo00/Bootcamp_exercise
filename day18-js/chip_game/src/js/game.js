@@ -9,11 +9,17 @@ class Game {
     this.board = document.createElement('div');
     this.board.classList.add('board');
     this.board.innerHTML = (`
-    <h1 id="score">Score: ${this.score}</h1>
-    <button id="addChip">Add chip</button>
-    <button id="resetBoard">Reset</button>
-    <input type="number" id="no-chips">
-    <button id="multiple-Chips">Add multiple chips</button>
+    <div class="main-menu">
+      <h1 id="score">Score: ${this.score}</h1>
+      <div class="button-container">
+        <button id="addChip">Add chip</button>
+        <button id="resetBoard">Reset</button>
+        <div class="btn-with-input">
+          <input type="number" id="no-chips" placeholder="number of chips">
+          <button id="multiple-Chips">Add multiple chips</button>
+        </div>
+      </div>
+    </div>
     `);
 
     // add one chip
@@ -46,14 +52,16 @@ class Game {
 
 
   renderChip() {
+    const randomChipValue = Math.floor(Math.random() * this.maxChipValue) + 1;
+
     this.chip = document.createElement('div');
     this.chip.classList.add('chip');
     // this.chip.id = `chip-no${this.chipNo}`;
-    this.chip.style.left = `${Math.floor(Math.random() * 540) + 1}px`;
-    this.chip.style.top = `${Math.floor(Math.random() * 540) + 1}px`;
+    this.chip.style.left = `${Math.floor(Math.random() * 540)}px`;
+    this.chip.style.top = `${Math.floor(Math.random() * 370) + 175}px`;
     this.chip.style.backgroundColor = `rgb(${Math.floor(Math.random() * 255) + 1}, ${Math.floor(Math.random() * 255) + 1}, ${Math.floor(Math.random() * 255) + 1})`;
     this.chip.innerHTML = (`
-    <p>${Math.floor(Math.random() * this.maxChipValue) + 1}</p>
+    <p>${randomChipValue}</p>
     `);
     this.board.appendChild(this.chip);
 
@@ -65,7 +73,7 @@ class Game {
       } else {
         e.path[0].style.display = 'none';
       }
-      this.score += 1;
+      this.score += randomChipValue;
       scoreBoard.innerText = `Score: ${this.score}`;
     });
   }

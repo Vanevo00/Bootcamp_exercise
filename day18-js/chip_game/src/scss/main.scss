@@ -14,6 +14,32 @@ body {
 
 h1 {
     padding: 1rem;
+    margin: 0;
+    color: white;
+}
+
+.main-menu {
+    background-color: black;
+}
+
+button {
+    margin: 1rem;
+    width: 150px;
+    border: none;
+    font-weight: bold;
+    padding: 1rem;
+}
+
+.button-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .btn-with-input {
+        display: flex;
+        flex-direction: column-reverse;
+        padding: 1rem;
+    }
 }
 
 .game {
@@ -43,6 +69,7 @@ h1 {
 
     p {
         color: white;
+        cursor: default;
     }
 }
 
