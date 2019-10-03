@@ -25,8 +25,8 @@ class Game {
     // add one chip
     const addChipButton = this.board.querySelector('#addChip');
     addChipButton.addEventListener('click', () => {
-      this.renderChip();
-      this.chipNo += 1;
+      this.mountChip();
+      console.log(this.chip);
     });
 
     // reset board
@@ -40,7 +40,8 @@ class Game {
     multipleChipsButton.addEventListener('click', () => {
       const noOfChips = this.board.querySelector('#no-chips').value;
       for (let i = 0; i < noOfChips; i += 1) {
-        this.renderChip();
+        this.mountChip();
+        console.log(this.chip);
       }
     });
   }
@@ -53,22 +54,17 @@ class Game {
 
   renderChip() {
     const randomChipValue = Math.floor(Math.random() * this.maxChipValue) + 1;
-
     this.chip = document.createElement('div');
     this.chip.classList.add('chip');
-    // this.chip.id = `chip-no${this.chipNo}`;
+    this.chip.id = `chip-no${this.chipNo}`;
+    this.chipNo += 1;
+    // const iddChip = document.querySelector(`#${this.chip.id}`);
     this.chip.style.left = `${Math.floor(Math.random() * 540)}px`;
     this.chip.style.top = `${Math.floor(Math.random() * 370) + 175}px`;
     this.chip.style.backgroundColor = `rgb(${Math.floor(Math.random() * 255) + 1}, ${Math.floor(Math.random() * 255) + 1}, ${Math.floor(Math.random() * 255) + 1})`;
     this.chip.innerHTML = (`
     <p>${randomChipValue}</p>
     `);
-    setInterval(() => {
-      this.chip.style.left = `${Math.floor(Math.random() * 540)}px`;
-      this.chip.style.top = `${Math.floor(Math.random() * 370) + 175}px`;
-    }, 1000);
-
-    this.board.appendChild(this.chip);
 
     this.chip.addEventListener('click', (e) => {
       console.log(e);
@@ -81,6 +77,15 @@ class Game {
       this.score += randomChipValue;
       scoreBoard.innerText = `Score: ${this.score}`;
     });
+  }
+
+  mountChip() {
+    this.renderChip();
+    setInterval(() => {
+      this.chip.style.left = `${Math.floor(Math.random() * 540)}px`;
+      this.chip.style.top = `${Math.floor(Math.random() * 370) + 175}px`;
+    }, 1000);
+    this.board.appendChild(this.chip);
   }
 
   resetBoard() {
