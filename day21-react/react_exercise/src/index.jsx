@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
-import Question from './question/index.jsx';
+import Question from './question/question.jsx';
 import './index.scss';
 import './index.html';
 
@@ -33,6 +33,7 @@ class App extends React.Component {
       {
         questionArr.map(question => (
           <Question 
+            key={question.question}
             user={question.user}
             question={question.question}
             answerDate={question.date}

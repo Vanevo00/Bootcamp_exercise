@@ -1,16 +1,25 @@
 import React from 'react';
-import './index.scss';
+import './question.scss';
 
 export default class Question extends React.Component {
+  constructor(props) {
+    super(props);
+
+    this.state = {
+      selected: false,
+      counter: null,
+    }
+  }
+  
+  handleClick = () => {
+    !this.state.selected ? this.setState({selected: true}) : this.setState({selected: false});
+    this.setState({counter: this.state.counter += 1});
+  }
+  
   render() {
-    // return (
-    //   <div className="contact">
-    //     <div className="contact__name">
-    //       { this.props.firstName } {this.props.lastName}
-    //     </div>
-    //     <div className="contact__email">{this.props.email}</div>
-    //   </div>
-    // );
+    let likeBtn = this.state.selected ? "far fa-thumbs-up blue" : "far fa-thumbs-up";
+    
+
     return (
       <div className="question-container">
         <div className="question-itself">
@@ -26,6 +35,10 @@ export default class Question extends React.Component {
         </div>
         <div className="answer">
           {this.props.answer}
+        </div>
+        <div className="like">
+          <i className={likeBtn} onClick={this.handleClick}></i>
+          {this.state.counter}
         </div>
       </div>
     );
