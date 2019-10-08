@@ -1,0 +1,28 @@
+.question-container {
+  border: solid lightgrey .5px;
+  border-radius: 5px;
+  margin-bottom: .5rem;
+  width: 30rem;
+  padding: .5rem;
+
+  .question-itself {
+    font-size: 1.25rem;
+    font-weight: bold;
+    margin-bottom: .25rem;
+  }
+
+  .aswering-user {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1rem;
+
+    .dateAnswer {
+      color: gray;
+      font-size: .85rem;
+    }
+  }
+
+  .answer {
+    text-align: justify;
+  }
+}
