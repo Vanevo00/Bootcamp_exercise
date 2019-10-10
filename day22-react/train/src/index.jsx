@@ -21,19 +21,19 @@ class App extends React.Component {
     return (
       <>
         <CarriageRow
-          row={1}
+          row={0}
           availability="tttt"
         />
         <CarriageRow
-          row={2}
+          row={1}
           availability="ftft"
         />
         <CarriageRow
-          row={3}
+          row={2}
           availability="ttff"
         />
         <CarriageRow
-          row={4}
+          row={3}
           availability="ffft"
         />
       </>
