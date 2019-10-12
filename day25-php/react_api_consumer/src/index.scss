@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,700,900&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.container {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  padding: 1em;
+  background-color: #296bb0;
+  color: white;
+  text-align: center;
+}
+
+
+h1 {
+  font-weight: normal;
+}
+
+main {
+  display: flex;
+  flex-grow: 1;
+}
+
+nav {
+  display: flex;
+  flex-direction: column;
+  background-color: #0d0d57;
+  border-right: 1px solid #03032b;
+
+  a {
+    color: white;
+    padding: 0.5em 2em;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.25);
+    text-decoration: none;
+
+    &:hover {
+      background-color: rgba(255, 255, 255, 0.25);
+    }
+  }
+}
+
+main .content {
+  display: flex;
+  flex-grow: 1;
+}
+
+main .content .message {
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2em;
+  font-weight: bold;
+
+  &.info {
+    color: silver;
+  }
+  &.error {
+    color: red;
+  }
+}
+
+main .content > .exercise {
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.basic-ul {
+  li {
+    border: 1px solid rgb(88, 88, 134);
+    background-color: rgb(180, 180, 226);
+    padding: 0.5em 1em;
+    list-style-type: none;
+    margin-bottom: 0.25em;
+  }
+}

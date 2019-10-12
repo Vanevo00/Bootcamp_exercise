@@ -1,0 +1,9 @@
+id: int
+name: short string
+surname: short string
+DOB: date
+Year: int
+Classes: short string
+Enrollment: date
+Provided dorm: boolean
+Last login into a student system: datetime

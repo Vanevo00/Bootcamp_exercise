@@ -1,0 +1,17 @@
+.movies-with-ratings {
+    li {
+        border: 1px solid rgb(36, 104, 64);
+        background-color: rgb(136, 189, 131);
+        padding: 0.5em 1em;
+        list-style-type: none;
+        margin-bottom: 0.25em;
+        display: flex;
+        justify-content: space-between;
+
+        .rating {
+            margin-left: auto;
+            font-size: 1.5em;
+            font-weight: bold;
+        }
+    }
+}
