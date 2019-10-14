@@ -24,7 +24,7 @@ export default class Celebrity extends React.Component {
                     </div>
                     <div className="events">
                         <ul>
-                            {this.props.events.map((elem) => <li>{elem}</li>)}
+                            {this.props.events.map((elem , i) => <li key= {i}>{elem}</li>)}
                         </ul>
                     </div>
                 </div>

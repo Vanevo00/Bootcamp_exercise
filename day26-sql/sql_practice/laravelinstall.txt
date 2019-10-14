@@ -1,0 +1,2 @@
+/Applications/mampstack-7.3.10-0/php/bin
+/Applications/mampstack-7.3.10-0/mysql/bin

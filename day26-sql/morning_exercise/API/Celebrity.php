@@ -17,7 +17,5 @@ class Celebrity
     $this->age = $array["age"];
     $this->citizenship = $array["citizenship"];
     $this->events = $array["events"];
-    $this->name = $array["name"];
-    $this->name = $array["name"];
   }
 }
