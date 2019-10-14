@@ -10,7 +10,7 @@ class App extends React.Component {
     return (
       <>
         <Celebrities 
-          url="http://www.cbp-exercises.test:8081/day26-laravel/API/"
+          url="http://www.cbp-exercises.test:8081/day26-laravel/morning_exercise/API/"
         />
       </>
     );
