@@ -1,0 +1,33 @@
+.game {
+  margin: 1rem;
+  border: black 1px solid;
+  border-radius: 10px;
+
+  .gameName {
+    font-size: 2rem;
+    padding: 1rem;
+  }
+
+  .pic-and-text {
+    padding: 1rem;
+    display: flex;
+
+    img {
+      margin-right: 1rem;
+    }
+
+    .description {
+      font-size: 1.2rem;
+      text-align: justify;
+    }
+  }
+
+  .rating-and-release {
+    padding: 1rem;
+    display: flex;
+
+    .rating {
+      margin-right: 1rem;
+    }
+  }
+}
