@@ -1,10 +1,11 @@
 import React from "react";
+import MovieFavorite from "./MovieFavorite.jsx";
 
 export default class MovieReview extends React.Component {
   constructor(props) {
     super(props);
 
-    this.movie_id = 420;
+    this.movie_id = 488;
 
     this.state = {
       movie_data: null,
@@ -50,7 +51,7 @@ export default class MovieReview extends React.Component {
   
   render () {
     let movie = "Loading..";
-    
+
     if (this.state.movie_data !== null) {
       movie = (
         <div className="movie">
@@ -68,6 +69,9 @@ export default class MovieReview extends React.Component {
        <input type="text" name="text" value={this.state.text} onChange={ this.handleTextChange }/>
        <input type="submit" value="Submit"/>
      </form> 
+     <MovieFavorite
+      movie_id={this.movie_id}
+     />
      </>
     )
   }
