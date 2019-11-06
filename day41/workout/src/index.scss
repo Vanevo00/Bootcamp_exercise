@@ -1,0 +1,109 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  margin: 0;
+}
+
+#page {
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  background-color: rgb(66, 60, 60);
+  color: #ffffff;
+  display: flex;
+}
+
+header .logo {
+  height: 3em;
+  margin: 0.5em 2em 0.5em 0.5em;
+}
+
+header nav {
+  display: flex;
+}
+header nav a {
+  display: flex;
+  height: 100%;
+  align-items: center;
+  padding: 0 0.5em;
+  font-size: 1.4em;
+  color: #ffffff;
+  text-decoration: none;
+}
+header nav a.current {
+  color: #00ccff;
+}
+
+header .user {
+  order: 2;
+  margin-left: auto;
+  padding: 0.5em;
+  text-align: right;
+}
+header .user a {
+  color: #ffffff;
+}
+#main {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+}
+
+#main nav.filter {
+  order: 2;
+  background-color: #00ccff;
+  padding: 1em;
+  align-self: stretch;
+}
+
+#main nav.filter label {
+  display: block;
+  margin-bottom: 0.5em;
+}
+#main nav.filter input {
+  font-size: 1.2em;
+  padding: 0.25em;
+  border-radius: 0.125em;
+  border: 1px solid #c7c7c7;
+}
+
+#main .content {
+  flex-grow: 1;
+  padding: 1em;
+}
+#main .content h1 {
+  margin-top: 0;
+}
+
+.product-list {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  
+}
+
+.product-list .product {
+  width: 30%;
+  border: 1px solid #c7c7c7;
+  border-radius: 0.25em;
+  margin-bottom: 2em;
+  padding: 1em;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  font-size: 1.2em;
+  align-items: center;
+}
+
+footer {
+  background-color: rgb(211, 211, 211);
+  padding: 0.25em;
+}
