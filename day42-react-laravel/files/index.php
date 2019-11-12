@@ -1,15 +1,23 @@
 <?php
+// var_dump(scandir(__DIR__));
+// $fhand = opendir(__DIR__);
 
-var_dump (__FILE__);
+// foreach(scandir(__DIR__) as $item) {
+//   var_dump($item);
+// }
 
-var_dump (__DIR__);
+// $fhand = fopen("./photos.txt", "r+");
 
-var_dump (
-  pathinfo(__FILE__)
-);
+// echo fgets($fhand);
+// echo fgets($fhand);
+// echo fgets($fhand);
 
-var_dump (
-  pathinfo(__FILE__, PATHINFO_EXTENSION)
-);
+// fclose($fhand);
 
-var_dump(scandir("./2018"));
+foreach(file("photos.txt") as $line) {
+  echo $line;
+  echo("<br>");
+}
+
+
+// closedir($fhand);

@@ -7,6 +7,7 @@ function browse_directory($directory)
         if($file == '.' || $file == '..') continue;
         if(is_dir($directory.'/'.$file)) {
             // using recursiveness to go deeper
+            echo "<strong>".$file."/</strong><br>";
             browse_directory($directory.'/'.$file);
         } else {
             echo $file."<br>";
@@ -14,4 +15,4 @@ function browse_directory($directory)
     }
 }
 
-browse_directory(__DIR__ . "/..");
+browse_directory(__DIR__ . "/.");

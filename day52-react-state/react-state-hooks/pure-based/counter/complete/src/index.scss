@@ -1,0 +1,33 @@
+* {
+  box-sizing: border-box;
+}
+
+.app {
+  display: flex;
+  align-items: center;
+}
+
+.buttons {
+  margin: 0 15px 0 15px;
+  display: flex;
+}
+
+button {
+  font-size: 3rem;
+  margin: 0 5px 0 5px;
+  border: 2px solid black;
+  background: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+html {
+  font-family: Helvetica;
+  font-size: 18px;
+}
+
+
